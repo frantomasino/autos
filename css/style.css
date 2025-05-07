@@ -288,10 +288,10 @@ text-decoration: underline;
 }
 
 
-/* Estilo de wtp */
-.btn-wtp {
+/* Estilo catalogo*/
+.btn-cata {
 display: inline-block;
-background-color: #25d366;  
+background-color: #647d6d;  
 color: white;
 padding: 10px 20px;
 border-radius: 5px;
@@ -312,7 +312,7 @@ background-color: #128c7e;
 }
 
 .logo img {
-  height: 48px;  
+  height: 100px;  
   width: auto;  
 }
 
@@ -322,7 +322,7 @@ background-color: #128c7e;
   }
 }
 
-/* Estilo para el botón de WhatsApp */
+/* botón de WhatsApp */
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
