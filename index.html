@@ -21,7 +21,7 @@
   <main>
     <!-- Hero o presentación -->
     <section class="hero">
-      <h1>Bienvenido a Autos.com</h1>
+      <h1>Bienvenido a MS.motorsquilmes</h1>
       <p>Tu próximo auto está aquí</p>
     </section>
     <!-- Sección Nosotros -->
@@ -36,6 +36,9 @@
 <section id="catalogo" class="catalogo">
   <div class="contenedor-flex">
     <!-- Sidebar de Filtros -->
+   
+    <!--
+   
     <aside class="sidebar">
       <h3>Filtrar por</h3>
 
@@ -70,17 +73,19 @@
           <option value="2023">2023</option>
         </select>
       </div>
-
-      <!-- Botón de aplicar -->
+                      
+      Botón de aplicar  
       <button class="btn-filtro">Aplicar filtros</button>
     </aside>
+  -->
+
 
     <!-- Catálogo de autos -->
     <div class="autos">
       <h2>Catálogo de Autos</h2>
       <div class="grid-autos">
         <!-- Tarjeta de auto -->
-        <div class="card-auto" data-marca="ford" data-anio="2024">
+        <div class="card-auto" data-marca="ford" data-modelo="Territory" data-anio="2024">
           <div class="galeria-principal">
             <img src="img/ford terri.png" alt="ford Frente" class="img-principal">
           </div>
@@ -94,7 +99,7 @@
           <p>$28,000 USD</p>
         </div>
 
-        <div class="card-auto" data-marca="ford" data-anio="2024">
+        <div class="card-auto" data-marca="nissan" data-modelo="versa" data-anio="2023">
           <div class="galeria-principal">
             <img src="img/nissan frente.png" alt="nissan Frente" class="img-principal">
           </div>
@@ -107,6 +112,21 @@
           <h3>Nissan Versa </h3>
           <p>$17.500 USD</p>
         </div>
+
+        <div class="card-auto" data-marca="jeep" data-modelo="Compass" data-anio="2025">
+          <div class="galeria-principal">
+            <img src="img/jeep frente.png" alt="jeep Frente" class="img-principal">
+          </div>
+          <div class="thumbnails" style="display: none;">
+            <img src="/img/jeep (2).png" alt="Foto 1">
+            <img src="/img/jeep.png" alt="Foto 2">
+            <img src="/img/costado jeep.png" alt="Foto 3">
+           </div>
+          <button class="btn-verfotos">Ver fotos</button>
+          <h3>Jeep Compass </h3>
+          <p>$29.500 USD</p>
+        </div>
+
     </div>
   </div>
 </section>
@@ -114,7 +134,19 @@
 
   </main>
 
-  <!-- tus secciones anteriores -->
+<!-- Sección Footer -->
+<footer class="footer">
+  <div class="contenedor-flex">
+    <div class="autor">
+      <p>&copy; 2025 Mateo Stein. Todos los derechos reservados.</p>
+    </div>
+    <div class="contacto">
+    <!--     <p>¿Tienes preguntas? <a href="mailto:tuemail@dominio.com" class="contact-link">Contáctame</a></p> -->
+     <!--   Si prefieres WhatsApp, puedes usar este enlace  -->
+        <p>¿Tenes preguntas? <a href="https://wa.me/1159456142" class="contact-link">Contáctame por WhatsApp</a></p>  
+    </div>
+  </div>
+</footer>
 
 
 <script src="js/script.js"></script>

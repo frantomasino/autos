@@ -1,5 +1,4 @@
-/* Reset básico */
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,8 +10,7 @@
     color: #333;
   }
   
-  /* NAVBAR */
-  .navbar {
+   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,8 +39,7 @@
     color: #0077cc;
   }
   
-  /* HERO */
-  .hero {
+   .hero {
     padding: 100px 20px;
     text-align: center;
     background-color: #0077cc;
@@ -188,6 +185,9 @@
   }
   
 
+  /* Estilo de mobile */
+
+
   @media (max-width: 768px) {
     .contenedor-flex {
       flex-direction: column;
@@ -256,3 +256,50 @@
     cursor: pointer;
   }
   
+
+ .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .autor p,
+.footer .contacto p {
+  margin: 0;
+}
+
+.footer .contact-link {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.footer .contact-link:hover {
+  text-decoration: underline;
+}
+
+ 
+/* Estilo de wtp */
+.btn-wtp {
+  display: inline-block;
+  background-color: #25d366;  
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-wtp:hover {
+  background-color: #128c7e;  
+}
