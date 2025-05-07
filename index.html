@@ -3,27 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MS.motorsquilmes</title>
+  <title>MS Motors</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="img/icono-ms-motors.webp">
 </head>
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="logo">MS Automotores</div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/icono-ms-motors.webp" alt="Logo Empresa">
+      </a>
+    </div>
+    
     <nav class="nav-links">
       <a href="#nosotros">Nosotros</a>
       <a href="#catalogo">Catálogo</a>
       <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/5491159456142" class="btn-wtp">WhatsApp</a>
     </nav>
   </header>
+  
+  
 
   <!-- Contenido principal -->
   <main>
-    <!-- Hero o presentación -->
     <section class="hero">
-      <h1>Bienvenido a MS.motorsquilmes</h1>
-      <p>Tu próximo auto está aquí</p>
-    </section>
+  <h1>Bienvenido a MS.Motors</h1>
+  <p>Compra segura, financiación personalizada y atención premium</p>
+  <a href="#catalogo" class="btn-wtp" style="margin-top: 20px; display: inline-block;">Ver Catálogo</a>
+</section>
+
     <!-- Sección Nosotros -->
 <section id="nosotros" class="nosotros">
   <div class="contenedor">
@@ -90,13 +100,14 @@
             <img src="img/ford terri.png" alt="ford Frente" class="img-principal">
           </div>
           <div class="thumbnails" style="display: none;">
-            <img src="/img/ford trompa.png" alt="Foto 1">
-            <img src="/img/ford.png" alt="Foto 2">
-            <img src="/img/interior ford.png" alt="Foto 3">
+            <img src="img/ford terri.png" alt="ford Frente" class="img-principal">
+            <img src="img/ford trompa.png" alt="Foto 1">
+            <img src="img/ford.png" alt="Foto 2">
+            <img src="img/interior ford.png" alt="Foto 3">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
           <h3>Ford Territory</h3>
-          <p>$28,000 USD</p>
+          <p>28.000 USD</p>
         </div>
 
         <div class="card-auto" data-marca="nissan" data-modelo="versa" data-anio="2023">
@@ -104,13 +115,14 @@
             <img src="img/nissan frente.png" alt="nissan Frente" class="img-principal">
           </div>
           <div class="thumbnails" style="display: none;">
-            <img src="/img/nissan trasero.png" alt="Foto 1">
-            <img src="/img/nissan versa.png" alt="Foto 2">
-            <img src="/img/nissan.png" alt="Foto 3">
+            <img src="img/nissan frente.png" alt="nissan Frente" class="img-principal">
+            <img src="img/nissan trasero.png" alt="Foto 1">
+            <img src="img/nissan versa.png" alt="Foto 2">
+            <img src="img/nissan.png" alt="Foto 3">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
           <h3>Nissan Versa </h3>
-          <p>$17.500 USD</p>
+          <p>17.500 USD</p>
         </div>
 
         <div class="card-auto" data-marca="jeep" data-modelo="Compass" data-anio="2025">
@@ -118,13 +130,31 @@
             <img src="img/jeep frente.png" alt="jeep Frente" class="img-principal">
           </div>
           <div class="thumbnails" style="display: none;">
-            <img src="/img/jeep (2).png" alt="Foto 1">
-            <img src="/img/jeep.png" alt="Foto 2">
-            <img src="/img/costado jeep.png" alt="Foto 3">
+            <img src="img/jeep frente.png" alt="jeep Frente" class="img-principal">
+            <img src="img/jeep (2).png" alt="Foto 1">
+            <img src="img/jeep.png" alt="Foto 2">
+            <img src="img/costado jeep.png" alt="Foto 3">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
           <h3>Jeep Compass </h3>
-          <p>$29.500 USD</p>
+          <p>29.500 USD</p>
+        </div>
+
+        <div class="card-auto" data-marca="citroen" data-modelo="picasso" data-anio="2025">
+          <div class="galeria-principal">
+            <img src="img/citroen frente.png" alt="citroen Frente" class="img-principal">
+          </div>
+          <div class="thumbnails" style="display: none;">
+            <img src="img/citroen frente.png" alt="citroen Frente" class="img-principal">
+            <img src="img/citroen.png" alt="Foto 1">
+            <img src="img/interior citroen.png" alt="Foto 1">
+            <img src="img/picasso.png" alt="Foto 2">
+            <img src="img/citroen.png" alt="Foto 3">
+            <img src="img/citroen trazero.png" alt="Foto 4">
+           </div>
+          <button class="btn-verfotos">Ver fotos</button>
+          <h3>Citroen Picasso</h3>
+          <p>16.500 USD</p>
         </div>
 
     </div>
@@ -135,38 +165,20 @@
   </main>
 
 <!-- Sección Footer -->
-<footer class="footer">
+<footer class="footer" id="contacto">
   <div class="contenedor-flex">
     <div class="autor">
-      <p>&copy; 2025 Mateo Stein. Todos los derechos reservados.</p>
+      <p>&copy; 2025 MS.motorsquilmes. Todos los derechos reservados.</p>
     </div>
     <div class="contacto">
-    <!--     <p>¿Tienes preguntas? <a href="mailto:tuemail@dominio.com" class="contact-link">Contáctame</a></p> -->
-     <!--   Si prefieres WhatsApp, puedes usar este enlace  -->
-        <p>¿Tenes preguntas? <a href="https://wa.me/1159456142" class="contact-link">Contáctame por WhatsApp</a></p>  
+      <p>Tel:  11 5945-6142</p>
     </div>
   </div>
 </footer>
 
 
+
 <script src="js/script.js"></script>
 </body>
 
-</html>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>
