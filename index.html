@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autos.com</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">MS Automotores</div>
+    <nav class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Hero o presentación -->
+    <section class="hero">
+      <h1>Bienvenido a Autos.com</h1>
+      <p>Tu próximo auto está aquí</p>
+    </section>
+    <!-- Sección Nosotros -->
+<section id="nosotros" class="nosotros">
+  <div class="contenedor">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una empresa dedicada a la venta de autos nuevos y usados con más de 10 años de experiencia en el rubro. Nuestro objetivo es ayudarte a encontrar el vehículo ideal al mejor precio.</p>
+  </div>
+</section>
+
+<!-- Sección Catálogo con Sidebar -->
+<section id="catalogo" class="catalogo">
+  <div class="contenedor-flex">
+    <!-- Sidebar de Filtros -->
+    <aside class="sidebar">
+      <h3>Filtrar por</h3>
+
+      <div class="filtro">
+        <label for="marca">Marca</label>
+        <select id="marca">
+          <option value="">Todas</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Ford">Ford</option>
+          <option value="Nissan">Nissan</option>
+        </select>
+      </div>
+
+
+      <div class="filtro">
+        <label for="modelo">Modelo</label>
+        <select id="marca">
+          <option value="">Todas</option>
+          <option value="Toyota">Etios</option>
+          <option value="Ford">Territory</option>
+          <option value="Honda">versa</option>
+        </select>
+      </div>
+
+      
+      <div class="filtro">
+        <label for="anio">Año</label>
+        <select id="anio">
+          <option value="">Todos</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
+      </div>
+
+      <!-- Botón de aplicar -->
+      <button class="btn-filtro">Aplicar filtros</button>
+    </aside>
+
+    <!-- Catálogo de autos -->
+    <div class="autos">
+      <h2>Catálogo de Autos</h2>
+      <div class="grid-autos">
+        <!-- Tarjeta de auto -->
+        <div class="card-auto" data-marca="ford" data-anio="2024">
+          <div class="galeria-principal">
+            <img src="img/ford terri.png" alt="ford Frente" class="img-principal">
+          </div>
+          <div class="thumbnails" style="display: none;">
+            <img src="/img/ford trompa.png" alt="Foto 1">
+            <img src="/img/ford.png" alt="Foto 2">
+            <img src="/img/interior ford.png" alt="Foto 3">
+           </div>
+          <button class="btn-verfotos">Ver fotos</button>
+          <h3>Ford Territory</h3>
+          <p>$28,000 USD</p>
+        </div>
+
+        <div class="card-auto" data-marca="ford" data-anio="2024">
+          <div class="galeria-principal">
+            <img src="img/nissan frente.png" alt="nissan Frente" class="img-principal">
+          </div>
+          <div class="thumbnails" style="display: none;">
+            <img src="/img/nissan trasero.png" alt="Foto 1">
+            <img src="/img/nissan versa.png" alt="Foto 2">
+            <img src="/img/nissan.png" alt="Foto 3">
+           </div>
+          <button class="btn-verfotos">Ver fotos</button>
+          <h3>Nissan Versa </h3>
+          <p>$17.500 USD</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- tus secciones anteriores -->
+
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
