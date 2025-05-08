@@ -100,10 +100,8 @@
           <div class="galeria-principal">
             <img src="img/ford terri.png" alt="ford Frente" class="img-principal">
           </div>
-          <div class="thumbnails" style="display: none;">
- 
+          <div class="thumbnails" style="display: none;"> 
             <img src="img/ford terri.png" alt="ford Frente" class="img-principal">
-
             <img src="img/ford trompa.png" alt="Foto 1">
             <img src="img/ford.png" alt="Foto 2">
             <img src="img/interior ford.png" alt="Foto 3">
@@ -111,6 +109,7 @@
             <img src="img/ford tablero.png" alt="Foto 5">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
+          <button class="btn-detalle" data-id="ford">Detalle</button>
           <h3>Ford Territory</h3>
           <p>28.000 USD</p>
           <div class="auto-detalles">
@@ -124,8 +123,7 @@
           <div class="galeria-principal">
             <img src="img/nissan frente.png" alt="nissan Frente" class="img-principal">
           </div>
-          <div class="thumbnails" style="display: none;">
- 
+          <div class="thumbnails" style="display: none;"> 
             <img src="img/nissan frente.png" alt="nissan Frente" class="img-principal">
               <img src="img/nissan trasero.png" alt="Foto 1">
             <img src="img/nissan versa.png" alt="Foto 2">
@@ -133,6 +131,7 @@
             <img src="img/nissan costaod.png" alt="Foto 4">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
+          <button class="btn-detalle" data-id="nissan">Detalle</button>
           <h3>Nissan Versa </h3>
           <p>17.500 USD</p>
           <div class="auto-detalles">
@@ -154,6 +153,7 @@
             <img src="img/jeep costado.png" alt="Foto 4">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
+          <button class="btn-detalle" data-id="jeep">Detalle</button>
           <h3>Jeep Compass </h3>
           <p>29.500 USD</p>
           <div class="auto-detalles">
@@ -162,6 +162,17 @@
             <span><i class="fas fa-cogs"></i> Automatica</span>
           </div>
         </div>
+        <div id="modalDetalle" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="tituloDetalle">Detalle del vehículo</h3>
+            <p><strong>Motor:</strong> <span id="detalleMotor"></span></p>
+            <p><strong>Puertas:</strong> <span id="detallePuertas"></span></p>
+            <p><strong>Color:</strong> <span id="detalleColor"></span></p>
+            <p><strong>Descripción:</strong> <span id="detalleDescripcion"></span></p>
+          </div>
+        </div>
+
 
         <div class="card-auto" data-marca="citroen" data-modelo="picasso" data-anio="2025">
           <div class="galeria-principal">
@@ -178,6 +189,7 @@
             <img src="img//trompa pica.png" alt="Foto 6">
            </div>
           <button class="btn-verfotos">Ver fotos</button>
+          <button class="btn-detalle" data-id="citroen">Detalle</button>
           <h3>Citroen Picasso</h3>
           <p>16.500 USD</p>
           <div class="auto-detalles">
@@ -191,21 +203,31 @@
   </div>
 </section>
 
-
   </main>
 
-<!-- Sección Footer -->
+<!-- Footer -->
 <footer class="footer" id="contacto">
   <div class="contenedor-flex">
     <div class="autor">
       <p>&copy; 2025 MS.motorsquilmes. Todos los derechos reservados.</p>
     </div>
-     
   </div>
-  
+
 </footer>
 
-<script src="js/script.js"></script>
+
+
+<!--  flotante -->
+<div id="modalDetalle" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="tituloDetalle">Detalle del vehículo</h3>
+    <p><strong>Motor:</strong> <span id="detalleMotor"></span></p>
+    <p><strong>Puertas:</strong> <span id="detallePuertas"></span></p>
+    <p><strong>Color:</strong> <span id="detalleColor"></span></p>
+    <p><strong>Descripción:</strong> <span id="detalleDescripcion"></span></p>
+  </div>
+</div>
 
 <div class="floating-buttons">
   <a href="https://www.instagram.com/ms.motorsquilmes/" target="_blank" class="instagram-btn">
@@ -218,9 +240,7 @@
 </div>
 
 
-
-
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
