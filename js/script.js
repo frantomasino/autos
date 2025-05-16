@@ -49,60 +49,6 @@ window.addEventListener('click', (e) => {
   }
 });
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  const modalCarrusel = document.getElementById("modalCarrusel");
-  const imagenCarrusel = document.getElementById("imagenCarrusel");
-  const btnCloseCarrusel = document.querySelector(".close-carrusel");
-  const btnPrev = document.getElementById("prevFoto");
-  const btnNext = document.getElementById("nextFoto");
-
-  let imagenesActuales = [];
-  let indiceActual = 0;
-
-  document.querySelectorAll(".btn-verfotos").forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      const card = btn.closest(".card-auto");
-      const thumbnails = card.querySelectorAll(".thumbnails img");
-
-      imagenesActuales = Array.from(thumbnails).map(img => img.src);
-      indiceActual = 0;
-
-      mostrarImagen();
-      modalCarrusel.style.display = "block";
-    });
-  });
-
-  btnCloseCarrusel.onclick = () => {
-    modalCarrusel.style.display = "none";
-  };
-
-  btnNext.onclick = () => {
-    indiceActual = (indiceActual + 1) % imagenesActuales.length;
-    mostrarImagen();
-  };
-
-  btnPrev.onclick = () => {
-    indiceActual = (indiceActual - 1 + imagenesActuales.length) % imagenesActuales.length;
-    mostrarImagen();
-  };
-
-  function mostrarImagen() {
-    imagenCarrusel.src = imagenesActuales[indiceActual];
-  }
-
-  // Cerrar al hacer clic fuera del contenido
-  window.onclick = (e) => {
-    if (e.target === modalCarrusel) {
-      modalCarrusel.style.display = "none";
-    }
-  };
-});
-
-
-
-
-
 // Datos de detalle para cada auto
 const detallesAutos = {
   ford: {
