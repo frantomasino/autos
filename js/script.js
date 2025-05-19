@@ -80,3 +80,30 @@ window.addEventListener('click', (e) => {
   }
 });
 
+
+
+const botonesWtp = document.querySelectorAll('.btn-wtp');
+
+botonesWtp.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const cardAuto = boton.closest('.card-auto');
+    const marca = cardAuto.getAttribute('data-marca');
+    const modelo = cardAuto.getAttribute('data-modelo');
+    const anio = cardAuto.getAttribute('data-anio');
+
+    // Armamos el mensaje que queremos enviar
+    const mensaje = `Hola, estoy interesado en el ${marca} ${modelo} ${anio}.`;
+
+    // Codificamos el mensaje para la URL
+    const mensajeCodificado = encodeURIComponent(mensaje);
+
+    // Número de WhatsApp (poné el que uses)
+    const numeroWtp = '5491159456142'; 
+
+    // URL para enviar el mensaje
+    const urlWtp = `https://wa.me/${numeroWtp}?text=${mensajeCodificado}`;
+
+    // Abrimos WhatsApp en una nueva pestaña con el mensaje
+    window.open(urlWtp, '_blank');
+  });
+});
