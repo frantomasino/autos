@@ -1,3 +1,34 @@
+// Datos de detalle para cada auto
+const detallesAutos = {
+  ford: {
+    motor: "1.8 Turbo",
+    puertas: "5",
+    color: "Blanco ",
+    descripcion: "SUV con excelente equipamiento, techo panorámico, asistente de estacionamiento y más.",
+  },
+  nissan: {
+    motor: "1.6",
+    puertas: "4",
+    color: "Gris Oscuro",
+    descripcion: "Sedán con gran espacio interior, pantalla multimedia, sensores de estacionamiento.",
+  },
+  jeep: {
+    motor: "2.0 Turbo",
+    puertas: "5",
+    color: "Blanco",
+    descripcion: "SUV robusto con excelente performance, tracción 4x4, tapizado cuero.",
+  },
+  citroen: {
+    motor: "1.6 HDi",
+    puertas: "5",
+    color: "Blanco",
+    descripcion: "Ideal para familias, muy cómodo, bajo consumo, sistema multimedia moderno.",
+  },
+};
+
+
+
+
 // Mostrar/ocultar galería y cambiar imagen principal
 
 document.querySelectorAll('.btn-verfotos').forEach(boton => {
@@ -48,33 +79,4 @@ window.addEventListener('click', (e) => {
     document.getElementById('modalDetalle').style.display = 'none';
   }
 });
-
-// Datos de detalle para cada auto
-const detallesAutos = {
-  ford: {
-    motor: "1.8 Turbo",
-    puertas: "5",
-    color: "Blanco Perlado",
-    descripcion: "SUV con excelente equipamiento, techo panorámico, asistente de estacionamiento y más.",
-  },
-  nissan: {
-    motor: "1.6",
-    puertas: "4",
-    color: "Negro",
-    descripcion: "Sedán con gran espacio interior, pantalla multimedia, sensores de estacionamiento.",
-  },
-  jeep: {
-    motor: "2.0 Turbo",
-    puertas: "5",
-    color: "Gris oscuro",
-    descripcion: "SUV robusto con excelente performance, tracción 4x4, tapizado cuero.",
-  },
-  citroen: {
-    motor: "1.6 HDi",
-    puertas: "5",
-    color: "Plateado",
-    descripcion: "Ideal para familias, muy cómodo, bajo consumo, sistema multimedia moderno.",
-  },
-};
-
 
