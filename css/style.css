@@ -105,32 +105,26 @@ body {
   justify-content: space-between;
 }
 
-
 .card-auto:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
 }
 
 .card-auto img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  border-bottom: 1px solid #eee;
 }
 
 .card-auto h3 {
-  margin: 20px 0 5px;
-  font-size: 1.3rem;
-  color: #1a1a1a;
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .card-auto p {
-  margin: 0 0 20px;
+  margin-bottom: 15px;
   color: #0077cc;
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: bold;
 }
-
 
 .contenedor-flex {
   display: flex;
@@ -237,43 +231,34 @@ body {
   }
 }
 
-/* THUMBNAILS */
 .card-auto .thumbnails {
   display: flex;
-  gap: 6px;
-  margin: 10px auto;
-  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
   flex-wrap: wrap;
 }
 
-
 .card-auto .thumbnails img {
   width: 70px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 6px;
+  height: auto;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: border 0.2s ease;
+  border-radius: 5px;
+  transition: border 0.2s;
 }
 
 .card-auto .thumbnails img:hover {
-  border-color: #0077cc;
+  border: 2px solid #0077cc;
 }
 
-/* BOTONES MODERNOS */
-.btn-detalle,
 .btn-verfotos {
-  background-color: transparent;
-  border: 2px solid #0077cc;
-  color: #0077cc;
-  padding: 8px 14px;
-  border-radius: 6px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  margin: 8px;
 }
 
 
@@ -370,31 +355,29 @@ background-color: #128c7e;
 }
 
 
-/* DETALLES DEL AUTO */
 .card-auto .auto-detalles {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin: 10px 0 15px;
   color: #555;
 }
 
 .card-auto .auto-detalles span {
-  background-color: #f2f2f2;
-  padding: 6px 12px;
-  border-radius: 8px;
+  background-color: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 500;
+  gap: 5px;
 }
 
 .card-auto .auto-detalles i {
   color: #0077cc;
-  font-size: 1rem;
 }
+
 
 /* Estilos del modal flotante */
 .modal {
@@ -448,12 +431,8 @@ background-color: #128c7e;
   cursor: pointer;
 }
 
-
-.btn-detalle:hover,
-.btn-verfotos:hover {
-  background-color: #0077cc;
-  color: white;
-  border-color: #0077cc;
+.btn-detalle:hover {
+  background-color: #005fa3;
 }
 
 /* Modal de Detalles */
