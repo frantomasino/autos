@@ -82,12 +82,10 @@ window.addEventListener('click', (e) => {
 
 
 
-<<<<<<< HEAD
+ 
 
 
-
-=======
-const botonesWtp = document.querySelectorAll('.btn-wtp');
+ const botonesWtp = document.querySelectorAll('.btn-wtp');
 
 botonesWtp.forEach(boton => {
   boton.addEventListener('click', () => {
@@ -112,4 +110,4 @@ botonesWtp.forEach(boton => {
     window.open(urlWtp, '_blank');
   });
 });
->>>>>>> deb63791aacd4cc25a01625360799d810893567e
+ 
