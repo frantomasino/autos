@@ -81,7 +81,15 @@ window.addEventListener('click', (e) => {
 });
 
 
+<<<<<<< HEAD
 const botonesWtp = document.querySelectorAll('.btn-wtp');
+=======
+
+ 
+
+
+ const botonesWtp = document.querySelectorAll('.btn-wtp');
+>>>>>>> ac7155ea5d84cd18ee988121088924954ca8b884
 
 botonesWtp.forEach(boton => {
   boton.addEventListener('click', () => {
