@@ -262,21 +262,6 @@ body {
 }
 
 
-.btn-wtp {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-
-
-
-
-
 .footer {
 background-color: #333;
 color: #fff;
@@ -352,6 +337,22 @@ background-color: #128c7e;
   z-index: 9999;
 }
 
+.floating-buttons a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-buttons a img {
+  width: 30px;
+  height: 30px;
+}
 
 
 .card-auto .auto-detalles {
@@ -487,44 +488,3 @@ background-color: #128c7e;
 }
 
 
-
-.floating-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  z-index: 1000;
-}
-
-.btn-floating {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 22px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.2s, background-color 0.3s;
-}
-
-.btn-floating:hover {
-  transform: scale(1.1);
-}
-
-.btn-floating.instagram {
-  color: #E1306C;
-}
-
-.btn-floating.whatsapp {
-  color: #25D366;
-}
-
-.btn-floating.tiktok {
-  color: #000;
-}
